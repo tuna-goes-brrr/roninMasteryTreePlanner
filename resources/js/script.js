@@ -3,7 +3,7 @@ mstrXMLhttp.open("GET", "https://tuna-goes-brrr.github.io/roninMasteryTreePlanne
 mstrXMLhttp.onload = function () {
     const masteryTree = JSON.parse(this.responseText);
     alert(this);
-};
+}
 mstrXMLhttp.send();
 
 function updateMasteryDetail(msg) {
@@ -24,14 +24,14 @@ let skillValues = {
     red: [0, 0, 0, 0, 0],
     blue: [0, 0, 0, 0, 0],
     green: [0, 0, 0, 0, 0]
-};
+}
 const skillNames = document.querySelectorAll('.skillBlock .skillName');
 const skillValues = document.querySelectorAll(".skillBlock .skillValue");
 for (let i = 0; i < skillNames.length; i++) {
     skillNames[i].addEventListener("click", function() {
-        updateMasteryDetail(this.innerHTML);
+        updateMasteryDetail(this.innerHTML)
     });
     skillValues[i].addEventListener("click", function() {
-        updateMasteryDetail(skillNames[i].innerHTML);
+        updateMasteryDetail(skillNames[i].innerHTML)
     });
 }
