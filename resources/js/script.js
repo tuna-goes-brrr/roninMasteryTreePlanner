@@ -21,16 +21,17 @@ function updateCharacter(ronin) {
 }
 
 let skillValues = {
-    red: [0, 0, 0, 0, 0];
-    blue: [0, 0, 0, 0, 0];
-    green: [0, 0, 0, 0, 0];
+    red: [0, 0, 0, 0, 0],
+    blue: [0, 0, 0, 0, 0],
+    green: [0, 0, 0, 0, 0]
 };
-let skillBlocks = document.querySelectorAll('.skillBlock');
+const skillNames = document.querySelectorAll('.skillBlock .skillName');
+const skillValues = document.querySelectorAll(".skillBlock .skillValue");
 for (let i = 0; i < skillNames.length; i++) {
-    skillBlocks[i].skillName.addEventListener("click", function() {
-        updateMasteryDetail(skillBlocks[i].skillName.innerHTML);
+    skillNames[i].addEventListener("click", function() {
+        updateMasteryDetail(this.innerHTML);
     });
-    skillBlocks[i].skillValue.addEventListener("click", function() {
-        updateMasteryDetail(skillBlocks[i].skillName.innerHTML);
+    skillValues[i].addEventListener("click", function() {
+        updateMasteryDetail(skillNames[i].innerHTML);
     });
 }
