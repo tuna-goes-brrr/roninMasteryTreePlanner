@@ -1,0 +1,98 @@
+{
+    "en-US":{
+        "charSelection":"Character select: ",
+        "greed":{
+            "masteryTitle":"Greed",
+            "masteryDesc":"Something goes here",
+            "skills":{
+                "shortName":["ATK","Speed","Gold","Material","Equipment"],
+                "fullName":["Tamegishiri","Easy Breezy","Lucky","Material Collection","Equipment Modification"],
+                "desc":[
+                    ["ATK increases by ",""],
+                    ["ATK Speed increases by ","%"],
+                    ["","% greater Gold reward after battle"],
+                    ["Chance to acquire upgrade materials increases by ","% after the battle is over"],
+                    ["Equipment performance increases by ","%"]
+                ]
+            }
+        },
+        "mastermind":{
+            "masteryTitle":"Mastermind",
+            "masteryDesc":"Something goes here",
+            "skills":{
+                "shortName":["Counter Flash","Boss DMG","Posture DMG","Energy","Stun duration"],
+                "fullName":["Exploit Weakness","Giant Hunter","Stone Breaker","Boost Charger","Domination"],
+                "desc":[
+                    ["Counter Flash DMG increases by ","%"],
+                    ["Deals ","% additional damage when attacking strong enemies"],
+                    ["","% additional Posture DMG"],
+                    ["Skill gauge charge rate increases by ","%"],
+                    ["Enemy stun duration increases by "," sec"]
+                ]
+            }
+        },
+        "resistence":{
+            "masteryTitle":"Resistence",
+            "masteryDesc":"Something goes here",
+            "skills":{
+                "shortName":["HP","Posture","Dodge","Heavy DEF","Heal"],
+                "fullName":["Vitality Training","Footwork Enhancement","Dodge Training","Defensive Stance","First Aid"],
+                "desc":[
+                    ["HP increases by ",""],
+                    ["Posture increases by ",""],
+                    ["Dodge increases by ","%"],
+                    ["Damage taken from Heavy Attacks decreases by ","%"],
+                    ["Restores ","% HP upon leveling up during battle"]
+                ]
+            }
+        }
+    },
+    "vi-VN":{
+        "charSelection":"Chọn nhân vật: ",
+        "greed":{
+            "masteryTitle":"Tham lam",
+            "masteryDesc":"Something goes here",
+            "skills":{
+                "shortName":["ATK","Tốc độ","Vàng","Nguyên liệu","Trang bị"],
+                "fullName":["Tamegishiri","Dễ như ăn kẹo","May mắn","Bộ sưu tập vật liệu","Sửa đổi Trang bị"],
+                "desc":[
+                    ["ATK tăng ",""],
+                    ["Tốc độ tấn công tăng ","%"],
+                    ["Thêm ","% vàng sau khi"],
+                    "Chance to acquire upgrade materials increases by XXX% after the battle is over",
+                    "Equipment performance increases by XXX%"
+                ]
+            }
+        },
+        "mastermind":{
+            "masteryTitle":"Mastermind",
+            "masteryDesc":"Something goes here",
+            "skills":{
+                "shortName":["Counter Flash","Boss DMG","Posture DMG","Energy","Stun duration"],
+                "fullName":["Exploit Weakness","Giant Hunter","Stone Breaker","Boost Charger","Domination"],
+                "desc":[
+                    "Counter Flash DMG increases by XXX%",
+                    "Deals XXX% additional damage when attacking strong enemies",
+                    "XXX% additional Posture DMG",
+                    "Skill gauge charge rate increases by XXX%",
+                    "Enemy stun duration increases by XXX sec"
+                ]
+            }
+        },
+        "resistence":{
+            "masteryTitle":"Resistence",
+            "masteryDesc":"Something goes here",
+            "skills":{
+                "shortName":["HP","Posture","Dodge","Heavy DEF","Heal"],
+                "fullName":["Vitality Training","Footwork Enhancement","Dodge Training","Defensive Stance","First Aid"],
+                "desc":[
+                    "HP increases by XXX",
+                    "Posture increases by XXX",
+                    "Dodge increases by XXX%",
+                    "Damage taken from Heavy Attacks decreases by XXX%",
+                    "Restores XXX% HP upon leveling up during battle"
+                ]
+            }
+        }
+    }
+}

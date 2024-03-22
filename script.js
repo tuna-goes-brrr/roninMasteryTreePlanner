@@ -35,6 +35,12 @@ function updateCharacter(ronin) {
         document.getElementById("blue2Name").innerHTML = "CRIT Rate";
     }
 }
+
+let skillValues = {
+    red: [0, 0, 0, 0, 0];
+    blue: [0, 0, 0, 0, 0];
+    green: [0, 0, 0, 0, 0];
+};
 let skillBlocks = document.querySelectorAll('.skillBlock');
 for (let i = 0; i < skillNames.length; i++) {
     skillBlocks[i].skillName.addEventListener("click", function() {
