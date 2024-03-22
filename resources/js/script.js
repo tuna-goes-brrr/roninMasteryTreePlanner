@@ -1,5 +1,5 @@
 const mstrXMLhttp = new XMLHttpRequest();
-mstrXMLhttp.open("GET", "");
+mstrXMLhttp.open("GET", "https://tuna-goes-brrr.github.io/roninMasteryTreePlanner/resources/data/masteryData.json");
 mstrXMLhttp.onload = function () {
     const masteryTree = JSON.parse(this.responseText);
     alert(this);
