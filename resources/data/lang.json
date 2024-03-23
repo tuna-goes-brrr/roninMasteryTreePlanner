@@ -13,7 +13,12 @@
                     ["","% greater Gold reward after battle"],
                     ["Chance to acquire upgrade materials increases by ","% after the battle is over"],
                     ["Equipment performance increases by ","%"]
-                ]
+                ],
+                "tomoe":{
+                    "shortName":"CRIT DMG",
+                    "fullName":"Crit damage",
+                    "desc":["CRIT DMG increases by ","%"]
+                }
             }
         },
         "mastermind":{
@@ -28,7 +33,12 @@
                     ["","% additional Posture DMG"],
                     ["Skill gauge charge rate increases by ","%"],
                     ["Enemy stun duration increases by "," sec"]
-                ]
+                ],
+                "tomoe":{
+                    "shortName":"CRIT Rate",
+                    "fullName":"Crit rate",
+                    "desc":["CRIT Rate increases by ","%"]
+                }
             }
         },
         "resistence":{
