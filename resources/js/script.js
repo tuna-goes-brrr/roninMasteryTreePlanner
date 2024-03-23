@@ -23,12 +23,12 @@ function updateMasteryDetail(msg) {
     document.getElementById("masteryDetail").innerHTML = msg;
 }
 
-const ele = document.querySelector(".characterSelector");
+const ele = document.querySelector("#characterSelector");
 ele.addEventListener("change", function () {
     if (this == "Kenji") {
         document.getElementById("red2Name").innerHTML = lang[region].greed.skills.shortname[1];
         document.getElementById("blue2Name").innerHTML = lang[region].mastermind.skills.shortname[1];
-    } else if (ronin == "Tomoe") {
+    } else if (this == "Tomoe") {
         document.getElementById("red2Name").innerHTML = lang[region].greed.tomoe.skills.shortname[1];
         document.getElementById("blue2Name").innerHTML = lang[region].mastermind.tomoe.skills.shortname[1];
     }
