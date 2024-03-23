@@ -11,7 +11,7 @@ requestLang.open("GET", "https://tuna-goes-brrr.github.io/roninMasteryTreePlanne
 requestLang.onreadystatechange = function() {
     if(requestLang.readyState === XMLHttpRequest.DONE && requestLang.status === 200) {
         alert("load success");
-        const language = JSON.parse(this.responseText);
+        const multilingual = JSON.parse(this.responseText);
     }
 }
 requestLang.send()
@@ -31,11 +31,11 @@ const ele = document.querySelector("#characterSelector");
 ele.addEventListener("change", function () {
     alert(this.value);
     if (this.value == "Kenji") {
-        document.getElementById("red2Name").innerHTML = lang[region].greed.skills.shortname[1];
-        document.getElementById("blue2Name").innerHTML = lang[region].mastermind.skills.shortname[1];
+        document.getElementById("red2Name").innerHTML = multilingual[region].greed.skills.shortname[1];
+        document.getElementById("blue2Name").innerHTML = multilingual[region].mastermind.skills.shortname[1];
     } else if (this.value == "Tomoe") {
-        document.getElementById("red2Name").innerHTML = lang[region].greed.tomoe.skills.shortname[1];
-        document.getElementById("blue2Name").innerHTML = lang[region].mastermind.tomoe.skills.shortname[1];
+        document.getElementById("red2Name").innerHTML = multilingual[region].greed.tomoe.skills.shortname[1];
+        document.getElementById("blue2Name").innerHTML = multilingual[region].mastermind.tomoe.skills.shortname[1];
     }
 });
 
