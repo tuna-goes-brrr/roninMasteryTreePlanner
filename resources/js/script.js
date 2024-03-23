@@ -1,16 +1,20 @@
-const XMLhttp = new XMLHttpRequest();
-XMLhttp.open("GET", "https://tuna-goes-brrr.github.io/roninMasteryTreePlanner/resources/data/masteryData.json");
-XMLhttp.onload = function () {
-    const masteryTree = JSON.parse(this.responseText);
-    alert(this);
+const requestMstr = new XMLHttpRequest();
+requestMstr.open("GET", "https://tuna-goes-brrr.github.io/roninMasteryTreePlanner/resources/data/masteryData.json");
+requestMstr.onreadystatechange = function() {
+    if(requestMstr.readyState === XMLHttpRequest.DONE && requestMstr.status === 200) {
+        const masteryTree = JSON.parse(this.responseText);
+    }
 }
-XMLhttp.send();
-XMLhttp.open("GET", "https://tuna-goes-brrr.github.io/roninMasteryTreePlanner/resources/data/lang.json");
-XMLhttp.onload = function () {
-    const lang = JSON.parse(this.responseText);
-    alert(this);
+requestMstr.send();
+const requestLang = new XMLHttpRequest();
+requestLang.open("GET", "https://tuna-goes-brrr.github.io/roninMasteryTreePlanner/resources/data/lang.json");
+requestLang.onreadystatechange = function() {
+    if(requestLang.readyState === XMLHttpRequest.DONE && requestLang.status === 200) {
+        alert("load success");
+        const language = JSON.parse(this.responseText);
+    }
 }
-XMLhttp.send();
+requestLang.send()
 
 let region = "en-US";
 let skillValue = {
@@ -25,11 +29,11 @@ function updateMasteryDetail(msg) {
 
 const ele = document.querySelector("#characterSelector");
 ele.addEventListener("change", function () {
-    alert(this);
-    if (this == "Kenji") {
+    alert(this.value);
+    if (this.value == "Kenji") {
         document.getElementById("red2Name").innerHTML = lang[region].greed.skills.shortname[1];
         document.getElementById("blue2Name").innerHTML = lang[region].mastermind.skills.shortname[1];
-    } else if (this == "Tomoe") {
+    } else if (this.value == "Tomoe") {
         document.getElementById("red2Name").innerHTML = lang[region].greed.tomoe.skills.shortname[1];
         document.getElementById("blue2Name").innerHTML = lang[region].mastermind.tomoe.skills.shortname[1];
     }
