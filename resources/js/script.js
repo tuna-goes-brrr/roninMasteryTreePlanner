@@ -20,7 +20,7 @@ function updateCharacter(ronin) {
     }
 }
 
-let skillValues = {
+let skillValue = {
     red: [0, 0, 0, 0, 0],
     blue: [0, 0, 0, 0, 0],
     green: [0, 0, 0, 0, 0]

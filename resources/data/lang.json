@@ -59,23 +59,23 @@
                     ["ATK tăng ",""],
                     ["Tốc độ tấn công tăng ","%"],
                     ["Thêm ","% thưởng vàng sau khi hoàn thành trận chiến"],
-                    "Chance to acquire upgrade materials increases by XXX% after the battle is over",
-                    "Equipment performance increases by XXX%"
+                    ["Chance to acquire upgrade materials increases by ","% after the battle is over"],
+                    ["Equipment performance increases by ","%"]
                 ]
             }
         },
         "mastermind":{
-            "masteryTitle":"Mastermind",
+            "masteryTitle":"Quân sư",
             "masteryDesc":"Something goes here",
             "skills":{
                 "shortName":["Counter Flash","Boss DMG","Posture DMG","Energy","Stun duration"],
                 "fullName":["Exploit Weakness","Giant Hunter","Stone Breaker","Boost Charger","Domination"],
                 "desc":[
-                    "Counter Flash DMG increases by XXX%",
-                    "Deals XXX% additional damage when attacking strong enemies",
-                    "XXX% additional Posture DMG",
-                    "Skill gauge charge rate increases by XXX%",
-                    "Enemy stun duration increases by XXX sec"
+                    ["Counter Flash DMG increases by ","%"],
+                    ["Deals ","% additional damage when attacking strong enemies"],
+                    ["","% additional Posture DMG"],
+                    ["Skill gauge charge rate increases by ","%"],
+                    ["Enemy stun duration increases by "," sec"]
                 ]
             }
         },
@@ -86,11 +86,11 @@
                 "shortName":["HP","Posture","Dodge","Heavy DEF","Heal"],
                 "fullName":["Vitality Training","Footwork Enhancement","Dodge Training","Defensive Stance","First Aid"],
                 "desc":[
-                    "HP increases by XXX",
-                    "Posture increases by XXX",
-                    "Dodge increases by XXX%",
-                    "Damage taken from Heavy Attacks decreases by XXX%",
-                    "Restores XXX% HP upon leveling up during battle"
+                    ["HP increases by ",""],
+                    ["Posture increases by ",""],
+                    ["Dodge increases by ","%"],
+                    ["Damage taken from Heavy Attacks decreases by ","%"],
+                    ["Restores ","% HP upon leveling up during battle"]
                 ]
             }
         }
