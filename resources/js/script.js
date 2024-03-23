@@ -23,7 +23,7 @@ function updateMasteryDetail(msg) {
     document.getElementById("masteryDetail").innerHTML = msg;
 }
 
-const ele = document.querySelector("");
+const ele = document.querySelector(".characterSelector");
 ele.addEventListener("change", function () {
     if (this == "Kenji") {
         document.getElementById("red2Name").innerHTML = lang[region].greed.skills.shortname[1];
