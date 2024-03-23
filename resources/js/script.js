@@ -25,6 +25,7 @@ function updateMasteryDetail(msg) {
 
 const ele = document.querySelector("#characterSelector");
 ele.addEventListener("change", function () {
+    alert(this);
     if (this == "Kenji") {
         document.getElementById("red2Name").innerHTML = lang[region].greed.skills.shortname[1];
         document.getElementById("blue2Name").innerHTML = lang[region].mastermind.skills.shortname[1];
