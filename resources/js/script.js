@@ -108,7 +108,7 @@ Promise.all([promise1,promise2])
         })
         
         // update mastery skill detail
-        for (child of skillBlocks[i].children){
+        for (const child of skillBlocks[i].children){
             child.addEventListener("click", function () {
                 branchText = multilingual[region][branch];
                 updateMasteryDetail(
