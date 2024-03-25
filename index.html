@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=100vw, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
@@ -15,135 +15,134 @@
 <body>
     <div class="main">
         <div class="characterSelection">
-            <div>Character select
+            <label for="characterSelector">Select character:&nbsp</label>
             <select id="characterSelector">
                 <option value="Kenji">Kenji</option>
                 <option value="Tomoe">Tomoe</option>
             </select>
-            </div>
         </div>
         <div></div>
         <div class="masteryContainer">
             <div class="masteryBlock greed">
                 <div class="masteryTitle">
-                    <b>Greed: </b>
-                    <span>0/30</span>
-                    <div class="resetButton" id="resetRed">
+                    <b id="titleGreed">Greed: </b>
+                    <span id="sumGreed">0/30</span>
+                    <button class="resetButton" id="resetRed">
                         <b>&#x21BA</b>
-                    </div>
+                    </button>
                 </div>
                 <div class="masteryBranches">
                     <span class="skillBlock" id="red1">
                         <div class="skillName" id="red1Name">ATK</div>
-                        <div class="arrow" id="red1Left">&#x3C</div>
+                        <button class="arrowLeft" id="red1Left">&#x3C</button>
                         <div class="skillValue" id="red1Value">0/15</div>
-                        <div class="arrow" id="red1Right">&#x3E</div>
+                        <button class="arrowRight" id="red1Right">&#x3E</button>
                     </span>
                     <span class="skillBlock">
                         <div class="skillName" id="red2Name">Speed</div>
-                        <div class="arrow" id="red2Left">&#x3C</div>
+                        <button class="arrowLeft" id="red2Left">&#x3C</button>
                         <div class="skillValue" class="red2Value">0/10</div>
-                        <div class="arrow" id="red2Right">&#x3E</div>
+                        <button class="arrowRight" id="red2Right">&#x3E</button>
                     </span>
                     <span class="skillBlock">
                         <div class="skillName" id="red3Name">Gold</div>
-                        <div class="arrow" id="red3Left">&#x3C</div>
+                        <button class="arrowLeft" id="red3Left">&#x3C</button>
                         <div class="skillValue" id="red3Value">0/10</div>
-                        <div class="arrow" id="red3Right">&#x3E</div>
+                        <button class="arrowRight" id="red3Right">&#x3E</button>
                     </span>
                     <span class="skillBlock">
                         <div class="skillName" id="red4Name">Material</div>
-                        <div class="arrow" id="red4Left"> &#x3C</div>
+                        <button class="arrowLeft" id="red4Left"> &#x3C</button>
                         <div class="skillValue" id="red4Value">0/10</div>
-                        <div class="arrow" id="red4Right">&#x3E</div>
+                        <button class="arrowRight" id="red4Right">&#x3E</button>
                     </span>
                     <span class="skillBlock">
                         <div class="skillName" id="red5Name">Equipment</div>
-                        <div class="arrow" id="red5Name">&#x3C</div>
-                        <div class="skillValue" id="red5Value">0/15</div>
-                        <div class="arrow" id="red5Right">&#x3E</div>
+                        <button class="arrowLeft" id="red5Name">&#x3C</button>
+                        <div class="skillValue" id="red5Value">0/5</div>
+                        <button class="arrowRight" id="red5Right">&#x3E</button>
                     </span>
                 </div>
             </div>
             <div class="masteryBlock mastermind">
                 <div class="masteryTitle">
-                    <b>Mastermind: </b>
-                    <span>0/30</span>
-                    <div class="resetButton">
+                    <b id="titleMastermind">Mastermind: </b>
+                    <span id="sumMastermind">0/30</span>
+                    <button class="resetButton">
                         <b>&#x21BA</b>
-                    </div>
+                    </button>
                 </div>
                 <div class="masteryBranches">
                     <span class="skillBlock">
                         <div class="skillName">CF</div>
-                        <div>&#x3C</div>
+                        <button class="arrowLeft">&#x3C</button>
                         <div class="skillValue">0/15</div>
-                        <div>&#x3E</div>
+                        <button class="arrowRight">&#x3E</button>
                     </span>
                     <span class="skillBlock">
                         <div class="skillName" id="blue2Name">Boss DMG</div>
-                        <div>&#x3C</div>
+                        <button class="arrowLeft">&#x3C</button>
                         <div class="skillValue">0/10</div>
-                        <div>&#x3E</div>
+                        <button class="arrowRight">&#x3E</button>
                     </span>
                     <span class="skillBlock">
                         <div class="skillName">Posture DMG</div>
-                        <div>&#x3C</div>
+                        <button class="arrowLeft">&#x3C</button>
                         <div class="skillValue">0/10</div>
-                        <div>&#x3E</div>
+                        <button class="arrowRight">&#x3E</button>
                     </span>
                     <span class="skillBlock">
                         <div class="skillName">Energy</div>
-                        <div>&#x3C</div>
+                        <button class="arrowLeft">&#x3C</button>
                         <div class="skillValue">0/10</div>
-                        <div>&#x3E</div>
+                        <button class="arrowRight">&#x3E</button>
                     </span>
                     <span class="skillBlock">
                         <div class="skillName">Stun duration</div>
-                        <div>&#x3C</div>
-                        <div class="skillValue">0/15</div>
-                        <div>&#x3E</div>
+                        <button class="arrowLeft">&#x3C</button>
+                        <div class="skillValue">0/5</div>
+                        <button class="arrowRight">&#x3E</button>
                     </span>
                 </div>
             </div>
             <div class="masteryBlock resistance">
                 <div class="masteryTitle">
-                    <b>Resistance: </b>
-                    <span>0/30</span>
-                    <div class="resetButton">
+                    <b id="titleResistance">Resistance: </b>
+                    <span id="sumResistance">0/30</span>
+                    <button class="resetButton">
                         <b>&#x21BA</b>
-                    </div>
+                    </button>
                 </div>
                 <div class="masteryBranches">
                     <span  class="skillBlock">
                         <div class="skillName">HP</div>
-                        <div>&#x3C</div>
+                        <button class="arrowLeft">&#x3C</button>
                         <div class="skillValue">0/15</div>
-                        <div>&#x3E</div>
+                        <button class="arrowRight">&#x3E</button>
                     </span>
                     <span class="skillBlock">
                         <div class="skillName">Posture</div>
-                        <div>&#x3C</div>
+                        <button class="arrowLeft">&#x3C</button>
                         <div class="skillValue">0/10</div>
-                        <div>&#x3E</div>
+                        <button class="arrowRight">&#x3E</button>
                     </span>
                     <span class="skillBlock">
                         <div class="skillName">Dodge</div>
-                        <div>&#x3C</div>
+                        <button class="arrowLeft">&#x3C</button>
                         <div class="skillValue">0/10</div>
-                        <div>&#x3E</div>
+                        <button class="arrowRight">&#x3E</button>
                     </span>
                     <span class="skillBlock">
                         <div class="skillName">Heavy DEF</div>
-                        <div>&#x3C</div>
+                        <button class="arrowLeft">&#x3C</button>
                         <div class="skillValue">0/10</div>
-                        <div>&#x3E</div>
+                        <button class="arrowRight">&#x3E</button>
                     </span>
                     <span class="skillBlock">
                         <div class="skillName">Heal</div>
-                        <div>&#x3C</div>
+                        <button class="arrowLeft">&#x3C</button>
                         <div class="skillValue">0/5</div>
-                        <div>&#x3E</div>
+                        <button class="arrowRight">&#x3E</button>
                     </span>
                 </div>
             </div>
@@ -152,7 +151,9 @@
             Mastery Details go here!
         </div>
         <div class="commentBox">
-            Tuna bot: <strong id="commentBox">...</strong>
+            <strong>Tuna bot:</strong>
+            <!-- <i id="commentBox">Đồng đạo muốn luyện thành chánh quả, cần những thứ sau...</i> -->
+            <i id="tunaBot">...</i>
         </div>
     </div>
     

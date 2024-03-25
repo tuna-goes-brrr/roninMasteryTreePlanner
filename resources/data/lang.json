@@ -1,13 +1,14 @@
 {
     "en-US":{
         "charSelection":"Character select: ",
-        "greed":{
+        "tunaBot":["Cost "," gold<br>and "," mastery points"],
+        "Greed":{
             "masteryTitle":"Greed",
             "masteryDesc":"Something goes here",
             "skills":{
-                "shortName":["ATK","Speed","Gold","Material","Equipment"],
-                "fullName":["Tamegishiri","Easy Breezy","Lucky","Material Collection","Equipment Modification"],
-                "desc":[
+                "briefName":["ATK","Speed","Gold","Material","Equipment"],
+                "longName":["Tamegishiri","Easy Breezy","Lucky","Material Collection","Equipment Modification"],
+                "discription":[
                     ["ATK increases by ",""],
                     ["ATK Speed increases by ","%"],
                     ["","% greater Gold reward after battle"],
@@ -15,19 +16,19 @@
                     ["Equipment performance increases by ","%"]
                 ],
                 "tomoe":{
-                    "shortName":"CRIT DMG",
-                    "fullName":"Crit damage",
+                    "briefName":"CRIT DMG",
+                    "longName":"Crit damage",
                     "desc":["CRIT DMG increases by ","%"]
                 }
             }
         },
-        "mastermind":{
+        "Mastermind":{
             "masteryTitle":"Mastermind",
             "masteryDesc":"Something goes here",
             "skills":{
-                "shortName":["Counter Flash","Boss DMG","Posture DMG","Energy","Stun duration"],
-                "fullName":["Exploit Weakness","Giant Hunter","Stone Breaker","Boost Charger","Domination"],
-                "desc":[
+                "briefName":["Counter Flash","Boss DMG","Posture DMG","Energy","Stun duration"],
+                "longName":["Exploit Weakness","Giant Hunter","Stone Breaker","Boost Charger","Domination"],
+                "discription":[
                     ["Counter Flash DMG increases by ","%"],
                     ["Deals ","% additional damage when attacking strong enemies"],
                     ["","% additional Posture DMG"],
@@ -35,19 +36,19 @@
                     ["Enemy stun duration increases by "," sec"]
                 ],
                 "tomoe":{
-                    "shortName":"CRIT Rate",
-                    "fullName":"Crit rate",
+                    "briefName":"CRIT Rate",
+                    "longName":"Crit rate",
                     "desc":["CRIT Rate increases by ","%"]
                 }
             }
         },
-        "resistence":{
-            "masteryTitle":"Resistence",
+        "Resistance":{
+            "masteryTitle":"Resistance",
             "masteryDesc":"Something goes here",
             "skills":{
-                "shortName":["HP","Posture","Dodge","Heavy DEF","Heal"],
-                "fullName":["Vitality Training","Footwork Enhancement","Dodge Training","Defensive Stance","First Aid"],
-                "desc":[
+                "briefName":["HP","Posture","Dodge","Heavy DEF","Heal"],
+                "longName":["Vitality Training","Footwork Enhancement","Dodge Training","Defensive Stance","First Aid"],
+                "discription":[
                     ["HP increases by ",""],
                     ["Posture increases by ",""],
                     ["Dodge increases by ","%"],
@@ -59,13 +60,14 @@
     },
     "vi-VN":{
         "charSelection":"Chọn nhân vật: ",
-        "greed":{
+        "tunaBot":["Đạo hữu muốn tu luyện thành công cần<br>"," vàng và "," điểm lão luyện"],
+        "Greed":{
             "masteryTitle":"Tham lam",
             "masteryDesc":"Something goes here",
             "skills":{
-                "shortName":["ATK","Tốc độ","Vàng","Nguyên liệu","Trang bị"],
-                "fullName":["Tamegishiri","Dễ như ăn kẹo","May mắn","Bộ sưu tập vật liệu","Sửa đổi Trang bị"],
-                "desc":[
+                "briefName":["ATK","Tốc độ","Vàng","Nguyên liệu","Trang bị"],
+                "longName":["Tamegishiri","Dễ như ăn kẹo","May mắn","Bộ sưu tập vật liệu","Sửa đổi Trang bị"],
+                "discription":[
                     ["ATK tăng ",""],
                     ["Tốc độ tấn công tăng ","%"],
                     ["Thêm ","% thưởng vàng sau khi hoàn thành trận chiến"],
@@ -74,13 +76,13 @@
                 ]
             }
         },
-        "mastermind":{
+        "Mastermind":{
             "masteryTitle":"Quân sư",
             "masteryDesc":"Something goes here",
             "skills":{
-                "shortName":["Counter Flash","Boss DMG","Posture DMG","Energy","Stun duration"],
-                "fullName":["Exploit Weakness","Giant Hunter","Stone Breaker","Boost Charger","Domination"],
-                "desc":[
+                "briefName":["Counter Flash","Boss DMG","Posture DMG","Energy","Stun duration"],
+                "longName":["Exploit Weakness","Giant Hunter","Stone Breaker","Boost Charger","Domination"],
+                "discription":[
                     ["Counter Flash DMG increases by ","%"],
                     ["Deals ","% additional damage when attacking strong enemies"],
                     ["","% additional Posture DMG"],
@@ -89,13 +91,13 @@
                 ]
             }
         },
-        "resistence":{
-            "masteryTitle":"Resistence",
+        "Resistance":{
+            "masteryTitle":"resistance",
             "masteryDesc":"Something goes here",
             "skills":{
-                "shortName":["HP","Posture","Dodge","Heavy DEF","Heal"],
-                "fullName":["Vitality Training","Footwork Enhancement","Dodge Training","Defensive Stance","First Aid"],
-                "desc":[
+                "briefName":["HP","Posture","Dodge","Heavy DEF","Heal"],
+                "longName":["Vitality Training","Footwork Enhancement","Dodge Training","Defensive Stance","First Aid"],
+                "discription":[
                     ["HP increases by ",""],
                     ["Posture increases by ",""],
                     ["Dodge increases by ","%"],

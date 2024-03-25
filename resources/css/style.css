@@ -60,45 +60,91 @@ select {
     padding: 0.5%;
     border-radius: 7px;
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 1fr auto;
 }
 .skillBlock > div {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .skillName {
+    text-align: center;
+    grid-row-start: 1;
     grid-column: 1/5;
+    /* z-index: -1; */
 }
 .skillValue {
+    grid-row-start: 2;
     grid-column: 2/4;
 }
+.arrowLeft {
+    grid-column-start: 1;
+    grid-row: 1/3;
+    justify-content: flex-start;
+}
+.arrowRight {
+    grid-column-start: 4;
+    grid-row: 1/3;
+    justify-content: flex-end;
+}
+.arrowLeft, .arrowRight {
+    display: flex;
+    border: solid rgba(255, 255, 255, 0);
+    z-index: 5;
+    align-items: flex-end;
+    color: white;
+    transition-duration: 0.4;
+}
+.arrowLeft:hover, .arrowRight:hover {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid black;
+    color: black
+}
 .greed {
-    background: RGBA(112,56,56,0.3);
+    background: RGBA(112,56,56,0.2);
     border-style: solid;
     border-color: RGB(112,56,56);
 }
 .greed .masteryBranches span {
-    background: RGBA(112,56,56,0.8);
+    background: RGBA(112,56,56,0.5);
     color: white
 }
+.greed .masteryBranches button {
+    background: RGBA(112,56,56,0.2);
+    color: white
+}
+.greed .masteryBranches button:hover {
+    background: RGBA(112,56,56,0.8)
+}
 .mastermind {
-    background: RGBA(45,60,80,0.3);
+    background: RGBA(45,60,80,0.2);
     border-style: solid;
     border-color: RGB(45,60,80);
 }
 .mastermind .masteryBranches span {
-    background: RGBA(45,60,80,0.8);
+    background: RGBA(45,60,80,0.5);
     color: white
 }
+.mastermind .masteryBranches button {
+    background: RGBA(45,60,80,0.2);
+}
+.mastermind .masteryBranches button:hover {
+    background: RGBA(45,60,80,0.8);
+}
 .resistance {
-    background: RGBA(55,85,60,0.3);
+    background: RGBA(55,85,60,0.2);
     border-style: solid;
     border-color: RGB(55,85,60);
 }
 .resistance .masteryBranches span {
-    background: RGBA(55,85,60,0.8);
+    background: RGBA(55,85,60,0.5);
     color: white
+}
+.resistance .masteryBranches button {
+    background: RGBA(55,85,60,0.2);
+}
+.resistance .masteryBranches button:hover {
+    background: RGBA(55,85,60,0.8)
 }
 .masteryDetail {
     display: flex;
@@ -107,6 +153,7 @@ select {
     border-color: gray;
     margin: 5px;
     padding: 5px;
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
@@ -121,14 +168,14 @@ select {
     color: #980000;
 }
 .commentBox {
-    display: flex;
+    display: grid;
     padding: 0.5%;
     margin: 0.5%;
     justify-content: center;
     align-items: center;
 }
 @media screen and (min-width: 700px) {
-    .main {grid-template-columns: repeat(3, auto);}
+    .main {grid-template-columns: repeat(3, minmax(0, 1fr));}
     .characterSelection {grid-column: 1/3;}
     .masteryContainer {grid-column: 1/3;}
     .masteryTitle {font-size: 1.2em;}
@@ -141,6 +188,6 @@ select {
         flex: 1;
         padding: 0.5%;
     }
-    .masteryDetail {}
+    /* .masteryDetail {} */
     .commentBox {grid-column: 1/4;}
 }
