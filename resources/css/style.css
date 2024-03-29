@@ -9,7 +9,12 @@ body {
 .main {
     display: grid;
 }
-.characterSelection {
+.characterSelectionBox {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+}
+.languageSelectionBox {
     display: flex;
     justify-content: center;
     margin: 1%;
@@ -20,8 +25,9 @@ select {
     color: #980000;
 }
 .masteryContainer {
-    padding: 0px;
+    /* grid-column: 1/3; */
     display: grid;
+    padding: 0px;
     margin: 0.5%
 }
 .masteryBlock {
@@ -100,53 +106,72 @@ select {
     border: solid black;
     color: black
 }
-.greed {
+.Greed {
     background: RGBA(112,56,56,0.2);
     border-style: solid;
     border-color: RGB(112,56,56);
 }
-.greed .masteryBranches span {
+.Greed .masteryBranches span {
     background: RGBA(112,56,56,0.5);
     color: white
 }
-.greed .masteryBranches button {
+.Greed .masteryBranches span.active {
+    background: RGBA(112,56,56,1);
+}
+.Greed .masteryBranches span.active > button {
+    background-color: RGBA(0,0,0,0.2);
+}
+.Greed .masteryBranches button {
     background: RGBA(112,56,56,0.2);
     color: white
 }
-.greed .masteryBranches button:hover {
+.Greed .masteryBranches button:hover {
     background: RGBA(112,56,56,0.8)
 }
-.mastermind {
+.Mastermind {
     background: RGBA(45,60,80,0.2);
     border-style: solid;
     border-color: RGB(45,60,80);
 }
-.mastermind .masteryBranches span {
+.Mastermind .masteryBranches span {
     background: RGBA(45,60,80,0.5);
     color: white
 }
-.mastermind .masteryBranches button {
+.Mastermind .masteryBranches span.active {
+    background: RGBA(45,60,80,1);
+}
+.Mastermind .masteryBranches span.active > button {
+    background-color: RGBA(0,0,0,0.2);
+}
+.Mastermind .masteryBranches button {
     background: RGBA(45,60,80,0.2);
 }
-.mastermind .masteryBranches button:hover {
+.Mastermind .masteryBranches button:hover {
     background: RGBA(45,60,80,0.8);
 }
-.resistance {
+.Resistance {
     background: RGBA(55,85,60,0.2);
     border-style: solid;
     border-color: RGB(55,85,60);
 }
-.resistance .masteryBranches span {
+.Resistance .masteryBranches span {
     background: RGBA(55,85,60,0.5);
     color: white
 }
-.resistance .masteryBranches button {
+.Resistance .masteryBranches span.active {
+    background: RGBA(55,85,60,1);
+}
+.Resistance .masteryBranches span.active > button {
+    background: RGBA(0,0,0,0.2);
+}
+.Resistance .masteryBranches button {
     background: RGBA(55,85,60,0.2);
 }
-.resistance .masteryBranches button:hover {
+.Resistance .masteryBranches button:hover {
     background: RGBA(55,85,60,0.8)
 }
 .masteryDetail {
+    /* grid-column: 1/3; */
     display: flex;
     border-style: solid;
     border-radius: 5px;
@@ -157,17 +182,11 @@ select {
     justify-content: center;
     align-items: center;
 }
-.masteryDetail span {
-    min-height: 30px;
-    width: 100%;
-    padding: 5px;
-    margin: 5px;
-    text-align: center;
-    border-radius: 5px;
-    background-color: white;
-    color: #980000;
-}
+/* .masteryDetail > * {
+    align-items: flex-start;
+} */
 .commentBox {
+    /* grid-column: 1/3; */
     display: grid;
     padding: 0.5%;
     margin: 0.5%;
@@ -176,7 +195,7 @@ select {
 }
 @media screen and (min-width: 700px) {
     .main {grid-template-columns: repeat(3, minmax(0, 1fr));}
-    .characterSelection {grid-column: 1/3;}
+    .characterSelectionBox {grid-column: 1/3;}
     .masteryContainer {grid-column: 1/3;}
     .masteryTitle {font-size: 1.2em;}
     .masteryBranches {
@@ -188,6 +207,8 @@ select {
         flex: 1;
         padding: 0.5%;
     }
-    /* .masteryDetail {} */
+    .masteryDetail {
+        grid-column: 3/3;
+    }
     .commentBox {grid-column: 1/4;}
 }
