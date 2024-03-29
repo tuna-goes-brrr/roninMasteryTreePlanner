@@ -61,7 +61,7 @@ Promise.all([promise1,promise2])
                 updateMasteryDetail(multilingual[region][lastVisitedBranch].skills, lastVisitedSkillID)
         }
     })
-    // event adjust skill value
+    // event: adjust skill value
     const skillBlocks = document.querySelectorAll(".skillBlock")
     const tunaBot = document.querySelector("#tunaBot")
     for (let i = 0; i < skillBlocks.length; i++) {
@@ -110,7 +110,7 @@ Promise.all([promise1,promise2])
             })
         }
     }
-    // event reset mastery block
+    // event: reset mastery block
     const resetButtons = document.querySelectorAll(".resetButton")
     for (let i = 0; i<3; i++) {
         let branchs = ["Greed","Mastermind","Resistance"];
@@ -121,7 +121,7 @@ Promise.all([promise1,promise2])
             for (let j = 0; j<5; j++) {
                 skillValueArray[5*i+j] = 0;
                 skillValueDisplay[5*i+j].innerHTML 
-                    = skillValueArray[5*i+j] + "/" + masteryData[i].MAX_LEVEL;
+                    = skillValueArray[5*i+j] + "/" + masteryData[5*i+j].MAX_LEVEL;
                 skillBlocks[5*i+j].classList.remove("active")
             }
             if (lastVisitedSkillID)
