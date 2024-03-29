@@ -1,6 +1,8 @@
 {
     "en-US":{
-        "charSelection":"Character select: ",
+        "masteryDetailDefault":"Mastery details go here!",
+        "charSelection":"Character:&nbsp",
+        "langSelection":"Language:&nbsp",
         "tunaBot":["Cost "," gold<br>and "," mastery points"],
         "Greed":{
             "masteryTitle":"Greed",
@@ -18,7 +20,7 @@
                 "tomoe":{
                     "briefName":"CRIT DMG",
                     "longName":"Crit damage",
-                    "desc":["CRIT DMG increases by ","%"]
+                    "discription":["CRIT DMG increases by ","%"]
                 }
             }
         },
@@ -38,7 +40,7 @@
                 "tomoe":{
                     "briefName":"CRIT Rate",
                     "longName":"Crit rate",
-                    "desc":["CRIT Rate increases by ","%"]
+                    "discription":["CRIT Rate increases by ","%"]
                 }
             }
         },
@@ -59,7 +61,9 @@
         }
     },
     "vi-VN":{
-        "charSelection":"Chọn nhân vật: ",
+        "masteryDetailDefault":"Thông tin của lão luyện chi tiết tại đây!",
+        "charSelection":"Nhân vật:&nbsp",
+        "langSelection":"Ngôn ngữ:&nbsp",
         "tunaBot":["Đạo hữu muốn tu luyện thành công cần<br>"," vàng và "," điểm lão luyện"],
         "Greed":{
             "masteryTitle":"Tham lam",
@@ -71,38 +75,48 @@
                     ["ATK tăng ",""],
                     ["Tốc độ tấn công tăng ","%"],
                     ["Thêm ","% thưởng vàng sau khi hoàn thành trận chiến"],
-                    ["Chance to acquire upgrade materials increases by ","% after the battle is over"],
-                    ["Equipment performance increases by ","%"]
-                ]
+                    ["Cơ hội nhận nguyên liệu tăng thêm ","% sau khi trận chiến kết thúc"],
+                    ["Hiệu quả trang bị tăng thêm ","%"]
+                ],
+                "tomoe":{
+                    "briefName":"ST chí mạng",
+                    "longName":"Sát thương chí mạng",
+                    "discription":["Tăng sát thương chí mạng thêm ","%"]
+                }
             }
         },
         "Mastermind":{
             "masteryTitle":"Quân sư",
             "masteryDesc":"Something goes here",
             "skills":{
-                "briefName":["Counter Flash","Boss DMG","Posture DMG","Energy","Stun duration"],
-                "longName":["Exploit Weakness","Giant Hunter","Stone Breaker","Boost Charger","Domination"],
+                "briefName":["Phản kích","ST kẻ mạnh","ST tư thế","Nạp chiêu thức","Thời gian choáng"],
+                "longName":["Lợi dụng điểm yếu","Kẻ diệt khổng lồ","Phá thạch","Boost Charger","Domination"],
                 "discription":[
-                    ["Counter Flash DMG increases by ","%"],
-                    ["Deals ","% additional damage when attacking strong enemies"],
-                    ["","% additional Posture DMG"],
-                    ["Skill gauge charge rate increases by ","%"],
-                    ["Enemy stun duration increases by "," sec"]
-                ]
+                    ["Sát thương phản kích ","%"],
+                    ["Gây thêm ","% sát thương lên kẻ địch mạnh"],
+                    ["Sát thương tư thế tăng ","%"],
+                    ["Tốc độ nạp chiêu thức tăng thêm ","%"],
+                    ["Thời gian choáng của kẻ địch tăng "," giây"]
+                ],
+                "tomoe":{
+                    "briefName":"Tỉ lệ chí mạng",
+                    "longName":"Tỉ lệ chí mạng",
+                    "discription":["Tỉ lệ chí mạng tăng thêm ","%"]
+                }
             }
         },
         "Resistance":{
-            "masteryTitle":"resistance",
+            "masteryTitle":"Kháng chiến",
             "masteryDesc":"Something goes here",
             "skills":{
-                "briefName":["HP","Posture","Dodge","Heavy DEF","Heal"],
-                "longName":["Vitality Training","Footwork Enhancement","Dodge Training","Defensive Stance","First Aid"],
+                "briefName":["HP","Tư thế","Né tránh","Kháng hạng nặng","Chữa trị"],
+                "longName":["Tăng cường sinh lực","Tăng cường bộ pháp","Huấn luyện né tránh","Tư thế phòng ngự","Cấp cứu"],
                 "discription":[
-                    ["HP increases by ",""],
-                    ["Posture increases by ",""],
-                    ["Dodge increases by ","%"],
-                    ["Damage taken from Heavy Attacks decreases by ","%"],
-                    ["Restores ","% HP upon leveling up during battle"]
+                    ["HP tăng thêm ",""],
+                    ["Tư thế tăng thêm ",""],
+                    ["Tỉ lệ né tránh tăng thêm ","%"],
+                    ["Sát thương từ đòn hạng nặng giảm ","%"],
+                    ["Hồi ","% HP mỗi khi thăng cấp trong trận chiến"]
                 ]
             }
         }

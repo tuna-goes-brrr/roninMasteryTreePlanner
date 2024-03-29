@@ -14,16 +14,23 @@
 
 <body>
     <div class="main">
-        <div class="characterSelection">
-            <label for="characterSelector">Select character:&nbsp</label>
+        <div class="characterSelectionBox">
+            <label for="characterSelector" id="characterSelectorText">Character:&nbsp</label>
             <select id="characterSelector">
                 <option value="Kenji">Kenji</option>
                 <option value="Tomoe">Tomoe</option>
             </select>
         </div>
+        <div class="languageSelectionBox">
+            <label for="languageSelector" id="languageSelectorText">Language:&nbsp</label>
+            <select id="languageSelector">
+                <option value="en-US">Engrish</option>
+                <option value="vi-VN">Tiếng Việt</option>
+            </select>
+        </div>
         <div></div>
         <div class="masteryContainer">
-            <div class="masteryBlock greed">
+            <div class="masteryBlock Greed">
                 <div class="masteryTitle">
                     <b id="titleGreed">Greed: </b>
                     <span id="sumGreed">0/30</span>
@@ -64,7 +71,7 @@
                     </span>
                 </div>
             </div>
-            <div class="masteryBlock mastermind">
+            <div class="masteryBlock Mastermind">
                 <div class="masteryTitle">
                     <b id="titleMastermind">Mastermind: </b>
                     <span id="sumMastermind">0/30</span>
@@ -105,7 +112,7 @@
                     </span>
                 </div>
             </div>
-            <div class="masteryBlock resistance">
+            <div class="masteryBlock Resistance">
                 <div class="masteryTitle">
                     <b id="titleResistance">Resistance: </b>
                     <span id="sumResistance">0/30</span>
