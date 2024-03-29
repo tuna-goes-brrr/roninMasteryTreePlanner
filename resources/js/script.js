@@ -39,7 +39,8 @@ Promise.all([promise1,promise2])
                 } else brief[i].innerHTML = multilingual[region][branch].skills.briefName[i]
             }
         }
-        updateMasteryDetail(multilingual[region][lastVisitedBranch].skills, lastVisitedSkillID);
+        if (!lastVisitedBranch) updateMasteryDetail(null, null)
+        else updateMasteryDetail(multilingual[region][lastVisitedBranch].skills, lastVisitedSkillID);
         updateTunaBot()
 
     })
