@@ -29,7 +29,7 @@ Promise.all([promise1,promise2])
             = multilingual[region].charSelection;
         document.querySelector("#languageSelectorText").innerHTML
             = multilingual[region].langSelection;
-        for (branch of ["Greed","Mastermind","Resistance"]) {
+        for (let branch of ["Greed","Mastermind","Resistance"]) {
             document.querySelector("#title" + branch).innerHTML
                 = multilingual[region][branch].masteryTitle + ":";
             const brief = document.querySelectorAll(".masteryBlock." + branch +" .masteryBranches .skillName")
