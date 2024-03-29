@@ -3,7 +3,7 @@
         "masteryDetailDefault":"Mastery details go here!",
         "charSelection":"Character:&nbsp",
         "langSelection":"Language:&nbsp",
-        "tunaBot":["Cost "," gold<br>and "," mastery points"],
+        "tunaBot":["Cost "," gold and "," mastery points"],
         "Greed":{
             "masteryTitle":"Greed",
             "masteryDesc":"Something goes here",
