@@ -157,8 +157,10 @@ Promise.all([promise1,promise2])
         costGold = 0;
         costPoint = 0;
         for (let i = 0; i<15; i++){
-            costGold += masteryData[i].REQUIRED_GOLD[skillValueArray[i]];
-            costPoint += masteryData[i].REQUIRED_POINT[skillValueArray[i]]
+            for (let j = 0; j<skillValueArray[i]+1; j++){
+                costGold += masteryData[i].REQUIRED_GOLD[j];
+                costPoint += masteryData[i].REQUIRED_POINT[j]
+            }
         }
         tunaBot.innerHTML = multilingual[region].tunaBot[0] 
                 + costGold + multilingual[region].tunaBot[1]
