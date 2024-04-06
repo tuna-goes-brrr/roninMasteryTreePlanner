@@ -9,7 +9,7 @@
             "masteryDesc":"Something goes here",
             "skills":{
                 "briefName":["ATK","Speed","Gold","Material","Equipment"],
-                "longName":["Tamegishiri","Easy Breezy","Lucky","Material Collection","Equipment Modification"],
+                "longName":["Tameshigiri","Easy Breezy","Lucky","Material Collection","Equipment Modification"],
                 "discription":[
                     ["ATK increases by ",""],
                     ["ATK Speed increases by ","%"],
