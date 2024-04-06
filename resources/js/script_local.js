@@ -9,12 +9,12 @@ let costGold = 0, costPoint = 0;
 let lastVisitedSkillID = null;
 let lastVisitedBranch = null;
 
-// const promise1 = fetch("./resources/data/lang.json", {mode: "no-cors"}).then(r => r.json())
-// const promise2 = fetch("./resources/data/masteryData.json", {mode: "no-cors"}).then(r => r.json())
-const promise1 = fetch("https://tuna-goes-brrr.github.io/roninMasteryTreePlanner/resources/data/lang.json")
-.then(r => r.json())
-const promise2 = fetch("https://tuna-goes-brrr.github.io/roninMasteryTreePlanner/resources/data/masteryData.json")
-.then(r => r.json())
+const promise1 = fetch("./resources/data/lang.json", {mode: "no-cors"}).then(r => r.json())
+const promise2 = fetch("./resources/data/masteryData.json", {mode: "no-cors"}).then(r => r.json())
+// const promise1 = fetch("https://tuna-goes-brrr.github.io/roninMasteryTreePlanner/resources/data/lang.json")
+// .then(r => r.json())
+// const promise2 = fetch("https://tuna-goes-brrr.github.io/roninMasteryTreePlanner/resources/data/masteryData.json")
+// .then(r => r.json())
 Promise.all([promise1,promise2])
 .then((res) => {
     // mastery data and multilingual text fetched successfully
