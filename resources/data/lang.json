@@ -70,7 +70,7 @@
             "masteryDesc":"Something goes here",
             "skills":{
                 "briefName":["ATK","Tốc độ","Vàng","Nguyên liệu","Trang bị"],
-                "longName":["Tamegishiri","Dễ như ăn kẹo","May mắn","Bộ sưu tập vật liệu","Sửa đổi Trang bị"],
+                "longName":["Tameshigiri","Dễ như chơi","May mắn","Bộ sưu tập vật liệu","Sửa đổi Trang bị"],
                 "discription":[
                     ["ATK tăng ",""],
                     ["Tốc độ tấn công tăng ","%"],
@@ -80,7 +80,7 @@
                 ],
                 "tomoe":{
                     "briefName":"ST chí mạng",
-                    "longName":"Sát thương chí mạng",
+                    "longName":"Cú đánh quyết định",
                     "discription":["Tăng sát thương chí mạng thêm ","%"]
                 }
             }
@@ -90,7 +90,7 @@
             "masteryDesc":"Something goes here",
             "skills":{
                 "briefName":["Phản kích","ST kẻ mạnh","ST tư thế","Nạp chiêu thức","Thời gian choáng"],
-                "longName":["Lợi dụng điểm yếu","Kẻ diệt khổng lồ","Phá thạch","Boost Charger","Domination"],
+                "longName":["Lợi dụng điểm yếu","Kẻ diệt khổng lồ","Phá thạch","Tăng cường bộ nạp","Thống trị"],
                 "discription":[
                     ["Sát thương phản kích ","%"],
                     ["Gây thêm ","% sát thương lên kẻ địch mạnh"],
@@ -100,7 +100,7 @@
                 ],
                 "tomoe":{
                     "briefName":"Tỉ lệ chí mạng",
-                    "longName":"Tỉ lệ chí mạng",
+                    "longName":"Đao mài sắc",
                     "discription":["Tỉ lệ chí mạng tăng thêm ","%"]
                 }
             }
@@ -110,7 +110,7 @@
             "masteryDesc":"Something goes here",
             "skills":{
                 "briefName":["HP","Tư thế","Né tránh","Kháng hạng nặng","Chữa trị"],
-                "longName":["Tăng cường sinh lực","Tăng cường bộ pháp","Huấn luyện né tránh","Tư thế phòng ngự","Cấp cứu"],
+                "longName":["Tăng cường sinh lực","Tăng cường bộ pháp","Huấn luyện né tránh","Tư thế phòng ngự","Sơ cứu"],
                 "discription":[
                     ["HP tăng thêm ",""],
                     ["Tư thế tăng thêm ",""],
