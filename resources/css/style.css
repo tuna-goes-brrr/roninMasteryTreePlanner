@@ -72,6 +72,7 @@ select {
 .skillBlock > div {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .skillName {
     text-align: center;
